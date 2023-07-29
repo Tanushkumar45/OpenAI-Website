@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATGPT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/website logo.png" alt="">
+        </a>
+        <!-- <i class='bx bx-menu' id="menu-icon"></i> -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#API">API</a></li>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>            
+        </ul>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form> -->
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>ChatGPT powers<br/> interactive conversations</h1>
+            <p>Embrace the future with ChatGPT's intelligence. Empowering communication with AI's linguistic prowess and insight.</p>
+            <button class="btn btn-light">Try Now</button>
+        </div>
+        <div class="home-img">
+            <img src="img/chatbot-img.png" alt="">
+        </div>
+    </section>
+    <br />
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/history.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>The development of Chatbot GPT models marked significant milestones in natural language processing. It started with GPT-1 in 2018, showcasing the potential of large-scale language models. The breakthrough came with GPT-2 in 2019, boasting impressive language generation capabilities. Due to concerns about misuse, a full release was withheld initially. Finally, in 2020, GPT-3 was unveiled with a staggering 175 billion parameters, revolutionizing language tasks and demonstrating the power of pre-training and fine-tuning for diverse applications, including chatbots and content generation. GPT-1 had 117 million parameters, which was considered large at the time, but it was still relatively modest compared to its successors.GPT-2 truly groundbreaking was its remarkable language generation capabilities. It could generate coherent and contextually relevant text, making it appear almost human-like in its responses. GPT-3 was the largest language model of its time. It demonstrated an unprecedented capability to perform a wide range of natural language processing tasks, including language translation, text completion, question-answering, and even creative writing.</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>                     
+    </section>
+    <br />
+    <section>
+        <div class="heading">
+            <h2>How it works</h2>
+            <br />
+        </div>
+        <div class="Process-container">
+            <div class="box">
+                <h2>Pre-Training</h2>
+                <p>Pre-training on a sizable dataset with a diverse collection of Internet content is where ChatGPT begins. The text in this dataset comes from a variety of sources, including books, journals, websites, and other texts. The model develops its ability to anticipate the following word in a sentence based on the words that came before it during pre-training. The training data it receives helps it develop a comprehension of grammar, syntax, context, and linguistic patterns.</p>                
+                
+            </div>
+            <div class="box">
+                <h2>Transformer Architecture</h2>
+                <p>Transformer technology is used by ChatGPT. Transformers are deep learning models that were created expressly to handle sequential input, such as text. They are composed of various levels of self-attention processes that aid the model in comprehending the relationships between words in a phrase. Multiple "attention heads" are used by the self-attention mechanism to catch various components of the input.</p>                
+                
+            </div>
+            <div class="box">
+                <h2>Fine-tuning</h2>
+                <p>After pre-training, the model goes through fine-tuning on a smaller dataset that is more tailored to the target goal, in this instance conversational AI. The model is exposed to prompts and interactions with user-like inputs and appropriate replies during fine-tuning. Based on these exchanges, it develops the ability to produce pertinent and contextually suitable responses.</p>                
+                
+            </div>
+            <div class="box">
+                <h2>Context and Input</h2>
+                <p>An input prompt (the message or question you want to ask) is what you provide ChatGPT when you engage with it. Context is established for the model by the input prompt. A question, a sentence, or a thread of dialogue could all be included. ChatGPT's capacity to preserve and make use of context during interactive conversations is one of its advantages. Each message you send while interacting with ChatGPT is added to the context used to determine subsequent responses.</p>                
+                
+            </div>
+            <div class="box">
+                <h2>Tokenization</h2>
+                <p>Tokens, which are numerical representations of the model's understandable words and subwords, are created from the input prompt. Tokenization divides the text into smaller pieces so that the model can process it more easily. The act of breaking down the input text into smaller, so-called tokens—numerical representations the model uses to efficiently grasp and process the text—is referred to as tokenization.</p>                
+                
+            </div>
+            <div class="box">
+                <h2>Model Inference</h2>
+                <p>To generate a response, the model processes the tokenized input prompt as it moves through the Transformer architecture's stages. Throughout this process, the model pays attention to various sections of the input text, giving various words weights based on how important they are in the context. To generate a response using model inference in ChatGPT, the input text is tokenized and sent through the layers of the Transformer architecture.</p>                
+                
+            </div>
+            <div class="box">
+                <h2>Beam Search</h2>
+                <p>The model either uses sampling or beam search to provide the response. In sampling, the model chooses the subsequent word at random based on its anticipated probabilities, which can result in more imaginative yet unrestrained responses. In beam search, the model investigates various potential responses and chooses the most likely one, producing more coherent responses. </p>                
+                
+            </div>
+            <div class="box">
+                <h2>Output Decoding</h2>
+                <p>The model generates tokenized responses, which are then decoded back into human-readable text. The response is sent back to the user, completing the conversational loop. Output decoding is the process of turning the tokenized response from the model back into human-readable text, ensuring that the output is produced is clear and coherent for the user.</p>                
+                
+            </div>
+    </section>
+    <br />
+    <section class="API" id="API">
+        <div class="API-img">
+            <img src="img/API.jpg" alt="">
+        </div>
+        <div class="API-text">
+            <h2>API'S</h2>
+            <p>Application Programming Interfaces, or APIs, have completely changed how contemporary software programmes interact and communicate. They act as vital connectors between various software systems, enabling them seamless data and functionality interchange. Developers can access certain features or data of a service or platform via APIs, which establish a set of rules and protocols, without having to comprehend the complexity at play. Developers can improve the functionality and user experience of their applications by integrating third-party services such as payment gateways, social media platforms, or mapping services using APIs. Additionally, by offering pre-built components and features, APIs make it easier to construct new apps, saving developers considerable time and effort. The API economy, in which companies can monetize their services by providing APIs to external developers, has expanded as a result of the broad usage of APIs. As a result of this mutually beneficial partnership, developers are able to improve upon already-existing services and produce fresh alternatives. In the future of software development and in fostering seamless connectivity between a wide range of digital services, APIs will surely play a crucial part in the advancement of technology. The adaptability and widespread use of APIs have changed not only the software development.</p>
+            <button class="btn btn-primary">Know More</button>
+        </div>                     
+    </section>
+    <br />
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Reviews</h2>
+        </div>
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>I am amazed by ChatGPT's ability to engage in coherent and meaningful conversations, making it a valuable virtual assistant.</p>
+                <h2>Hemanth Naidu</h2>
+                <img src="img/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>I'm impressed with ChatGPT's adaptability, as it can be fine-tuned for various specific tasks, making it highly versatile.</p>
+                <h2>V.Ganesh</h2>
+                <img src="img/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>ChatGPT is a game-changer in the world of AI, with its intuitive and human-like interactions setting it apart from traditional chatbots..</p>
+                <h2>Abdul Rahman</h2>
+                <img src="img/rev3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <br />
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Open AI</h2>
+            <p>ChatGPT is an advanced language model capable of engaging in natural and coherent conversations with users.</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-soundcloud'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Help & Support</a></li> 
+            <li><a href="#">Terms & Policies</a></li>
+            <li><a href="#">Guidelines</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Products</h3>
+            <li><a href="#">ChatGPT</a></li>
+            <li><a href="#">GPT-4</a></li> 
+            <li><a href="#">DALLE-2</a></li>
+            <li><a href="#">API PRIVACY</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Company</h3>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blogs</a></li> 
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Charter</a></li>
+        </div>
+    </section>
+    <br />   
+    <div class="copyright">
+        <p>&#169;  OpenAI © 2015 – 2023</p>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
